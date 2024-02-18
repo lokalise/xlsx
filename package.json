@@ -17,14 +17,15 @@
     "office",
     "spreadsheet"
   ],
-  "main": "dist/xlsx.full.min.js",
-  "types": "index.d.ts",
+  "type": "commonjs",
   "exports": {
     ".": {
-      "require": "dist/xlsx.full.min.js",
-      "types": "index.d.ts"
+      "import": "./dist/xlsx.mjs",
+      "require": "./dist/xlsx.full.min.js"
     }
   },
+  "main": "./dist/xlsx.full.min.js",
+  "types": "./index.d.ts",
   "dependencies": {
   },
   "devDependencies": {
@@ -34,13 +35,6 @@
     "url": "https://github.com/lokalise/xlsx"
   },
   "scripts": {
-    "pretest": "npm run lint",
-    "test": "npm run tests-only",
-    "pretest-only": "git submodule init && git submodule update",
-    "tests-only": "make travis",
-    "build": "make",
-    "lint": "make fullint",
-    "dtslint": "dtslint types"
   },
   "homepage": "https://sheetjs.com/",
   "files": [
