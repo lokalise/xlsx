@@ -45,7 +45,9 @@
   "homepage": "https://sheetjs.com/",
   "files": [
     "dist",
-    "index.d.ts"
+    "index.d.ts",
+    "LICENSE",
+    "README.md"
   ],
   "bugs": {
     "url": "https://git.sheetjs.com/SheetJS/sheetjs/issues"
