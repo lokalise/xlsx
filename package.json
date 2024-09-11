@@ -1,6 +1,6 @@
 {
   "name": "@lokalise/xlsx",
-  "version": "0.20.2",
+  "version": "0.20.3",
   "author": "sheetjs",
   "description": "SheetJS Spreadsheet data parser and writer",
   "keywords": [
@@ -21,7 +21,8 @@
   "exports": {
     ".": {
       "import": "./dist/xlsx.mjs",
-      "require": "./dist/xlsx.full.min.js"
+      "require": "./dist/xlsx.full.min.js",
+      "types": "./index.d.ts"
     }
   },
   "main": "./dist/xlsx.full.min.js",
